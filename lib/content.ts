@@ -1,12 +1,21 @@
-// Text and links taken from the design, so sections stay markup-only.
+import {
+  FaInstagram,
+  FaFigma,
+  FaLinkedin,
+  FaTwitter,
+  FaTelegram,
+  FaMedium,
+} from "react-icons/fa6";
+
 export const NAV = ["Home", "Portfolio", "Skills", "About Me"];
+
 export const SOCIALS = [
-  "Instagram",
-  "Figma",
-  "LinkedIn",
-  "Twitter",
-  "Telegram",
-  "Medium",
+  { label: "Instagram", href: "#", Icon: FaInstagram },
+  { label: "Figma", href: "#", Icon: FaFigma },
+  { label: "LinkedIn", href: "#", Icon: FaLinkedin },
+  { label: "Twitter", href: "#", Icon: FaTwitter },
+  { label: "Telegram", href: "#", Icon: FaTelegram },
+  { label: "Medium", href: "#", Icon: FaMedium },
 ];
 export const STATS = [
   { value: "90%", label: "Job Success Score on Upwork" },

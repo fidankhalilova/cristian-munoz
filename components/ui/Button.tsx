@@ -1,4 +1,3 @@
-// One button component with variants, so every CTA in the design shares the same spec.
 import type { ButtonHTMLAttributes } from "react";
 
 const base =

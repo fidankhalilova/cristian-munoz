@@ -1,5 +1,4 @@
 "use client";
-// Fades and slides children in the first time they scroll into view.
 import { useEffect, useRef, useState } from "react";
 
 export default function Reveal({

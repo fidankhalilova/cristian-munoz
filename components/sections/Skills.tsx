@@ -1,4 +1,3 @@
-// 2x2 grid of skill cards
 import { SKILLS } from "@/lib/content";
 import Reveal from "../ui/Reveal";
 
@@ -47,18 +46,20 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto max-w-382 px-5 py-12 md:px-8 lg:py-20 2xl:px-0"
+      className="mx-auto max-w-7xl px-5 py-12 md:px-8 lg:py-20 2xl:px-0"
     >
-      <h2 className="font-display text-6xl uppercase lg:text-8xl">Skills</h2>
+      <h2 className="font-display text-4xl uppercase lg:text-6xl">Skills</h2>
       <ul className="mt-8 grid gap-6 lg:grid-cols-2">
         {SKILLS.map((s) => (
           <li key={s.name}>
             <Reveal>
-              <article className="flex flex-col items-center gap-6 rounded-xl border border-[#b9b9b9] p-6 sm:flex-row sm:p-8 dark:border-neutral-700">
+              <article className="flex flex-col items-center gap-6 rounded-xl border border-[#b9b9b9] p-6 text-center sm:flex-row sm:p-8 sm:text-left dark:border-neutral-700">
                 <Ring pct={s.pct} />
                 <div>
                   <h3 className="text-3xl font-extrabold">{s.name}</h3>
-                  <p className="mt-2 leading-snug">{s.text}</p>
+                  <p className="mt-2 text-sm leading-snug md:text-base">
+                    {s.text}
+                  </p>
                 </div>
               </article>
             </Reveal>
